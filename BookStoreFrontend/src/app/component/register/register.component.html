@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="imglogo">
+        <img class="img1" src="../../../assets/logo-img.png">
+        <p class="text">ONLINE BOOK SHOPPING</p>
+    </div>
+    <div class="register-login">
+        <div class="header" >
+            <div><button class="login" routerLink="/login">Login</button></div>
+            <div class="signup-div"><button class="signup">SIGNUP</button></div>
+        </div>
+    
+        <form [formGroup]="signupForm" (ngSubmit)="onsubmit()">
+            <div class="fullname">
+                <mat-label>Full Name</mat-label>
+                <mat-form-field appearance="outline" style="width:23vw">
+                    <input matInput type="text" formControlName="fullname" class="emailInput" placeholder="sachin pareek" >
+                    <mat-error>Enter valid email</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="emailId">
+            <mat-label>Email Id</mat-label>
+            <mat-form-field appearance="outline" style="width:23vw">
+                <input matInput type="email" formControlName="email" class="emailInput" placeholder="abc@gmail.com" >
+                <mat-error>Enter valid email</mat-error>
+            </mat-form-field>
+            </div>
+            <div class="password">
+                <mat-label>Password</mat-label>
+                <mat-form-field appearance="outline" >
+                    <input matInput type="password" formControlName="password" placeholder="password">
+                    <mat-error>Enter valid password</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="number">
+                <mat-label>Mobile Number</mat-label>
+                <mat-form-field appearance="outline" style="width:23vw">
+                    <input matInput type="number" formControlName="mobile" class="emailInput" placeholder="8200001112" >
+                    <mat-error>Enter valid email</mat-error>
+                </mat-form-field>
+                </div>
+            
+            <button mat-raised-button type="submit" class="btn-primary" style="background-color: #A03037;">Signup</button>
+        
+        </form>
+    </div>
+</div>

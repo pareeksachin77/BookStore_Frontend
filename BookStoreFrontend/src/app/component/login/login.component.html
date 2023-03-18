@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="imglogo">
+        <img class="img1" src="../../../assets/logo-img.png">
+        <p class="text">ONLINE BOOK SHOPPING</p>
+    </div>
+    <div class="register-login">
+        <div class="header" >
+            <div><button class="login">Login</button></div>
+            <div class="signup-div"><button class="signup" routerLink="/register">SIGNUP</button></div>
+        </div>
+    
+        <form [formGroup]="loginForm" class="formcontainer">
+            <div class="emailId">
+            <mat-label>Email Id</mat-label>
+            <mat-form-field appearance="outline" style="width:23vw">
+                <input matInput type="email" formControlName="email" class="emailInput" placeholder="abc@gmail.com" >
+                <mat-error>Enter valid email</mat-error>
+            </mat-form-field>
+            </div>
+            <div class="password">
+                <mat-label>Password</mat-label>
+                <mat-form-field appearance="outline" >
+                    <input matInput type="password" formControlName="password" placeholder="password">
+                    <mat-error>Enter valid password</mat-error>
+                </mat-form-field>
+            </div>
+            <div class="forgot-password">
+                <a class="forget-link">Forget Password?</a>
+            </div>
+            <button mat-raised-button type="submit" (click)="onsubmit()" class="btn-primary" style="background-color: #A03037;" >Login</button>
+            <div class="or">
+                ---------------OR-------------
+            </div>
+            <div class="buttons">
+                <button mat-flat-button class="btn-facebook" color="primary" type="button">Facebook</button>
+                <button mat-stroked-button class="btn-google" type="button">Google</button>
+            </div>
+        </form>
+    </div>
+</div>
