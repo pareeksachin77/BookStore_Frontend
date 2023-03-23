@@ -11,7 +11,7 @@ import { UserService } from 'src/app/Services/UserServices/user.service';
 export class LoginComponent implements OnInit {
 loginForm!:FormGroup
 submitted=false;
-  constructor(private fb:FormBuilder, private user:UserService) { }
+  constructor(private fb:FormBuilder, private user:UserService, private router:Router) { }
 
   ngOnInit(): void {
     this.loginForm=this.fb.group({
@@ -30,6 +30,8 @@ submitted=false;
       }
       this.user.login(payload).subscribe((response:any)=>{
         console.log(response);
+        localStorage.setItem("token",response.data);
+        this.router.navigateByUrl('dashboard/getallbooks')
       })
     }
 

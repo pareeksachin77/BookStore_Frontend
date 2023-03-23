@@ -1,0 +1,131 @@
+.MainContainer {
+    display: flex;
+    width: 98%;
+    height: fit-content;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  .containerOne {
+    width: 30%;
+  }
+  
+  .containerTwo {
+    width: 40%;
+    padding-left: 10px;
+    height: fit-content;
+  }
+  
+  #mainimage {
+    width: 250px;
+    border: 1px solid #d1d1d1;
+    padding: 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+  }
+  #price {
+    font-size: small;
+    font-weight: 200;
+    text-decoration: line-through;
+    border: none;
+  }
+  #discountPrice {
+    border: none;
+    font-weight: 500;
+  }
+  
+  .twoButton {
+    display: flex;
+  }
+  
+  button {
+    width: 40%;
+    margin: 3px;
+    padding: 3%;
+    color: white;
+    background-color: brown;
+    border: none;
+    cursor: pointer;
+  }
+  #wishButton {
+    background-color: #333333;
+  }
+  #heart {
+    font-size: 17px;
+    color: white;
+  }
+  #starbutton {
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+    width: 60px;
+    padding: 0px;
+  }
+  #star {
+    font-size: 15px;
+  }
+  .contentName {
+    padding: 0px 0px 0px 0px;
+    margin: 8px;
+    border: none;
+  }
+  .containerZero {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin-left: 100px;
+  }
+  .images {
+    width: 40px;
+    height: 50px;
+    padding: 5px;
+    border: 1px solid #d1d1d1;
+  }
+  
+  .decrease,
+  .increase {
+    border-radius: 50%;
+    border: 0.5px solid rgb(176, 173, 173);
+    color: black;
+    padding: 7px;
+    background: #fafafa 0% 0% no-repeat padding-box;
+    border: 1px solid #dbdbdb;
+  }
+  #Quantity {
+    border: solid grey 1px;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .MainContainer {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+    }
+    .containerOne {
+      margin: 0%;
+      width: 20%;
+      height: 20%;
+    }
+    .containerTwo {
+      width: 85%;
+    }
+    textarea {
+      width: 330px;
+    }
+  
+    .twoButton {
+      display: flex;
+      justify-content: space-between;
+      width: 500%;
+    }
+    button {
+      margin-right: 0%;
+    }
+  }

@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="head">
+        <div class="logo">
+            <img src="../../../assets/education.png" >
+        </div>
+        <div class="logo-name">
+            <span class="text">Bookstore</span>
+        </div>
+        <div class="search">
+            <img src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.svg">
+            <input class="search-input" type="search" placeholder="search...">
+        </div> 
+        <div class="profile-cart">
+                <div class="profile">
+                    <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-btn">
+                        <img class="img1" src="../../../assets/profile.svg">
+                        <div>Profile</div>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <div>
+                            <button mat-menu-item>
+                                <span><b>Welcome</b></span>
+                            </button>
+                            <button mat-menu-item>
+                                <span>To acsess account and manage orders</span>
+                            </button>
+                            <button mat-menu-item>
+                                <button class="login" mat-stroked-button color="warn" routerLink="/login">Login/Signup</button>
+                            </button>
+                            <button mat-menu-item>
+                                <span>---------------------</span>
+                            </button>
+                            <button mat-menu-item>
+                                <img src="../../../assets/supermarket.svg" width="20px" height="20px">
+                                <span>My Orders</span>
+                            </button>
+                            <button mat-menu-item>
+                                <img src="../../../assets/favorite.svg" width="20px" height="20px">
+                                <span>Wishlist</span>
+                            </button>
+                        </div>
+                    </mat-menu>
+                </div>
+                <div class="cart">
+                    <img class="img1" src="../../../assets/shopping_cart.svg">
+                    <div>Cart</div>
+                </div>
+        </div>
+    </div>
+    <div class="display-book"><router-outlet></router-outlet></div>
+    <footer>
+        <span>Copyright © 2023, Bookstore Private Limited. All Rights Reserved</span>
+    </footer>
+
+</div>

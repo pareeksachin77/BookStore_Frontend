@@ -5,8 +5,13 @@
     </div>
     <div class="register-login">
         <div class="header" >
-            <div><button class="login">Login</button></div>
-            <div class="signup-div"><button class="signup" routerLink="/register">SIGNUP</button></div>
+            <div class="login-div">
+                <button class="login">Login</button>
+                <span class="highlight1"></span>
+            </div>
+            <div class="signup-div">
+                <button class="signup" routerLink="/register">SIGNUP</button>
+            </div>
         </div>
     
         <form [formGroup]="loginForm" class="formcontainer">

@@ -1,0 +1,130 @@
+// .container{
+//   height:100%;
+// }
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-right: 85px;
+}
+.bookhead{
+    align-items: center; 
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .booksCount{
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #9D9D9D;
+  }
+  .display-books{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 140px;
+    padding-right: 14px;
+    height:auto
+    
+  }
+
+  .book{ 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    width: 235px;
+    height:300px;
+  }
+
+  .bookimage{
+    padding-left: 67px;
+    padding-top: 17px;
+    padding-right: 61px;
+    padding-bottom: 20px;
+  }
+  .bookdetails{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bookName{
+    letter-spacing: 0px;
+    color: #0A0102;
+    margin-bottom: 2px;
+  }
+  .authorName{
+    letter-spacing: 0px;
+    font-size: 10px;
+    color: #878787;
+    margin-bottom: 2px;
+  
+  }
+  .star-rating{
+    display: flex;
+  }
+  .rating{
+    width: 33px;
+    height: 16px;
+    background: #388E3C 0% 0% no-repeat padding-box;
+    border-radius: 1px;
+    font-size: 11px;
+    color: #FFFFFF;
+    margin-right: 5px;
+    padding: 2px;
+  }
+
+  .reviewerCount{
+    color: #878787;
+    font-size: 12px;
+  }
+  .discountPrice{
+    font-size: 12px;
+    font-weight: 600;
+    color: #0A0102;
+    margin-right: 10px;
+  }
+  .originalPrice{
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: line-through;
+    letter-spacing: 0px;
+    color: #878787;
+  }
+  
+  mat-card{
+    padding: 0px !important;
+  }
+
+  .quickView{
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 11px;
+    background: transparent 0% 0% no-repeat padding-box;
+    border-radius: 1px;
+    position: absolute;
+    top: 145px;  
+    border: transparent;
+    cursor:pointer;
+  }
+  .outOfStock{
+    width: 178px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 2px;
+    opacity: 0.96;
+    position:absolute;
+    top: 150px
+  }

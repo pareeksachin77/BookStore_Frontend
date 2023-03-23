@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="heading">
+        <div class="bookhead">
+            <span style="font-size: 22px; font-weight: 500;">Books</span>
+            <span class="booksCount">128 items</span>
+        </div>
+        <mat-form-field appearance="outline" style="padding-top: 15px;">
+            <mat-label>sort by relevence</mat-label>
+            <mat-select>
+              <mat-option >Sort by relevence</mat-option>
+              <mat-option >Price -- Low to High</mat-option>
+              <mat-option >Price -- High to low</mat-option>
+              <mat-option >Newest First</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="display-books">
+      <mat-card class="book" *ngFor="let book of bookList">
+        <div class="bookimage">
+          <img src="../../../assets/DMMT.png" width="125px" height="170px">
+          <span class="outOfStock" *ngIf="book.bookQuantity == 0">OUT OF STOCK</span>
+          <button class="quickView" *ngIf="book.bookQuantity!=0" (click)="quickview(book._id)">QUICK VIEW</button>
+        </div>
+        <div class="bookdetails">
+          <span class="bookName">{{book.bookName}} </span>
+          <span class="authorName">by {{book.author}}</span>
+          <div class="star-rating">
+            <div class="rating">
+              <span style="padding-top: 2px; margin-right: 2px;">{{book.rating}}</span>
+              <img src="../../../assets/grey-star.png" width="12px">
+            </div>
+            <span class="reviewerCount">({{book.quantity}})</span>
+          </div>
+          <div class="price">
+            <span class="discountPrice">Rs. {{book.discountPrice}}</span>
+            <span class="originalPrice">Rs. {{book.price}}</span>
+          </div>
+        </div>
+
+      </mat-card>
+    </div>
+</div>

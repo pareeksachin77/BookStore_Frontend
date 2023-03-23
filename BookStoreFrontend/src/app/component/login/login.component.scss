@@ -5,7 +5,8 @@
    // border: 1px solid black;
     width: 100%;
     height: 100%;
-    background-color:gray;
+    background: #878787;
+    //opacity: .31;
 }
 .imglogo{
     position: relative;
@@ -51,9 +52,23 @@
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0px;
-    color: #878787;
+    
+    color: #0A0102;
     border: none;
     background: transparent;
+}
+.login-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.highlight1 {
+    width: 30px;
+    height: 6px;
+    background: #A03037 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #00000029;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
 }
 
 .signup {
@@ -62,7 +77,8 @@
     letter-spacing: 0px;
     border: none;
     background: transparent;
-    color: #0A0102;
+    color: #878787;
+    
 }
 
 .emailId{
@@ -138,3 +154,5 @@
     font-size: 13px;
     width:35%;
   }
+
+  
